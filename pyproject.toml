@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "ipk-tool"
+version = "0.1.0"
+description = "Some Good Tool for IPK"
+authors = ["Reza Zeiny <rezazeiny1998@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/rezazeiny/ipk-tool"
+repository = "https://github.com/rezazeiny/ipk-tool"
+keywords = ["ipk_tool"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+packages = [
+    { include = "ipk_tool" },
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ipk-tool = "ipk_tool:main"
